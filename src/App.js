@@ -47,8 +47,8 @@ const App = () => {
       <Button type="primary" onClick={showModal}>
         Open Modal
       </Button>
-      <Modal title="welcome" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <Table columns={columns} dataSource={data} pagination={{ pageSize: 30 }} scroll={{ y: 240 }} /> 
+      <Modal title="welcome" centered visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <Table columns={columns} dataSource={data} pagination={{ pageSize: 30, showSizeChanger:false }} scroll={{ y: 240 }} /> 
       </Modal>
     </>
   );
